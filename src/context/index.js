@@ -15,7 +15,6 @@ class MyProvider extends Component{
             players : [
                 ...prevState.players,
                 name
-
             ]
 
         }))
@@ -49,7 +48,6 @@ class MyProvider extends Component{
 
     generateLooser = ()=>{
         const {players} = this.state
-
         this.setState({
             result: players[Math.floor(Math.random()*players.length)]
         })
